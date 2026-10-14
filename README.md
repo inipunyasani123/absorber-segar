@@ -2,7 +2,7 @@
 
 Landing page EthyleneAbsorber konsep "Segar": jaga kesegaran buah lebih lama dengan teknologi ethylene absorber berkualitas tinggi.
 
-**Demo live:** https://absorber-segar.vercel.app
+**Demo live:** https://absorber-segar.pintuweb.id
 
 ![Tangkapan layar EthyleneAbsorber](public/og.jpg)
 

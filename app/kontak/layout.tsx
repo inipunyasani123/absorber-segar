@@ -2,7 +2,7 @@
 export const metadata = {
   title: 'Minta Sample Gratis',
   description: 'Sebutkan buahnya dan ukuran tempat simpannya — kami hitung kebutuhan sachet dan kirim sample EthyleneAbsorber.',
-  alternates: { canonical: 'https://absorber-segar.vercel.app/kontak' },
+  alternates: { canonical: 'https://absorber-segar.pintuweb.id/kontak' },
 };
 
 export default function KontakLayout({ children }: { children: React.ReactNode }) {

@@ -5,7 +5,7 @@ export const metadata = {
   title: 'Hitung Sachet',
   description:
     'Hitung berapa sachet EthyleneAbsorber yang dibutuhkan lemari stok, gudang kecil, atau kamar stok lapak buah Anda — satu sachet untuk 1–2 m³ ruang tertutup.',
-  alternates: { canonical: 'https://absorber-segar.vercel.app/hitung' },
+  alternates: { canonical: 'https://absorber-segar.pintuweb.id/hitung' },
 };
 
 const CONTOH = [

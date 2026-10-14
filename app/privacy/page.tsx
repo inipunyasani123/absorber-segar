@@ -4,7 +4,7 @@ import { DIPERBARUI, PRIVASI } from '@/lib/legal';
 export const metadata = {
   title: 'Kebijakan Privasi',
   description: 'Data apa yang kami minta saat Anda minta sample EthyleneAbsorber, untuk apa dipakai, dan berapa lama disimpan.',
-  alternates: { canonical: 'https://absorber-segar.vercel.app/privacy' },
+  alternates: { canonical: 'https://absorber-segar.pintuweb.id/privacy' },
 };
 
 export default function PrivacyPage() {

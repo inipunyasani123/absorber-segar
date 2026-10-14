@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { TIPS } from "@/lib/tips";
 
-const BASE = "https://absorber-segar.vercel.app";
+const BASE = "https://absorber-segar.pintuweb.id";
 
 const routes: { path: string; priority: number }[] = [
   { path: "", priority: 1 },

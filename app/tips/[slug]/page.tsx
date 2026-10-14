@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import PosterHead from '@/components/PosterHead';
 import { TIPS, tipsBySlug, type Blok } from '@/lib/tips';
 
-const SITE = 'https://absorber-segar.vercel.app';
+const SITE = 'https://absorber-segar.pintuweb.id';
 
 export function generateStaticParams() {
   return TIPS.map((t) => ({ slug: t.slug }));

@@ -7,7 +7,7 @@ export const metadata = {
   title: 'Kamus Buah',
   description:
     'Dua belas buah pasar — pisang, mangga, alpukat, pepaya, apel, melon, tomat, jeruk, semangka, anggur, salak, nanas — mana yang butuh sachet, mana yang cukup dipisah, mana yang tidak perlu.',
-  alternates: { canonical: 'https://absorber-segar.vercel.app/kamus-buah' },
+  alternates: { canonical: 'https://absorber-segar.pintuweb.id/kamus-buah' },
 };
 
 export default function KamusBuahPage() {

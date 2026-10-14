@@ -6,7 +6,7 @@ export const metadata = {
   title: 'Tips Lapak',
   description:
     'Tiga tips pendek untuk pedagang buah: jangan campur pisang dengan sayur daun, sachet hanya bekerja di ruang tertutup, dan cek warna sachet tiap Senin.',
-  alternates: { canonical: 'https://absorber-segar.vercel.app/tips' },
+  alternates: { canonical: 'https://absorber-segar.pintuweb.id/tips' },
 };
 
 const WARNA = { grass: 'bg-grass-ink text-cream', citrus: 'bg-citrus text-rind', zest: 'bg-zest text-rind' };
