@@ -20,9 +20,9 @@ export default function Closing() {
       <section id="jaminan" className="relative overflow-hidden bg-cream-2/50 py-16 md:py-20">
         <div className="relative z-10 mx-auto max-w-6xl px-6">
           <p className="cap mb-8 text-center text-rind/80">Sudah diperiksa</p>
-          <dl className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <dl className="grid grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-4">
             {marks.map(([k, v]) => (
-              <div key={k} className="rounded-2xl bg-cream px-6 py-6 text-center">
+              <div key={k} className="rounded-2xl bg-cream px-4 py-5 text-center sm:px-6 sm:py-6">
                 <dt className="text-base font-extrabold text-rind">{k}</dt>
                 <dd className="mt-2 text-sm font-bold text-grass">{v}</dd>
               </div>
@@ -32,7 +32,7 @@ export default function Closing() {
       </section>
 
       {/* Tanya jawab ringkas */}
-      <section id="tanya" className="relative overflow-hidden bg-cream py-20 md:py-28">
+      <section id="tanya" className="relative overflow-hidden bg-cream py-16 md:py-28">
         <div className="relative z-10 mx-auto max-w-4xl px-6">
           <div className="mb-10 text-center">
             <h2 className="text-[2rem] leading-[1.08] font-extrabold text-rind md:text-[2.6rem]">
@@ -42,7 +42,7 @@ export default function Closing() {
 
           <dl className="space-y-4">
             {faqs.map(([q, a]) => (
-              <div key={q} className="rounded-3xl bg-cream-2/50 px-7 py-6">
+              <div key={q} className="rounded-3xl bg-cream-2/50 px-6 py-5 sm:px-7 sm:py-6">
                 <dt className="text-lg font-extrabold text-rind">{q}</dt>
                 <dd className="mt-2 text-sm leading-relaxed text-rind/80">{a}</dd>
               </div>
@@ -61,7 +61,7 @@ export default function Closing() {
       </section>
 
       {/* Ajakan */}
-      <section className="relative overflow-hidden bg-grass py-20 text-cream md:py-28">
+      <section className="relative overflow-hidden bg-grass py-16 text-cream md:py-28">
         <div aria-hidden="true" className="speckle absolute inset-0 text-rind" />
 
         <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">

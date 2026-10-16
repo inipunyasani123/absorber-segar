@@ -21,9 +21,9 @@ const legend = [
 
 export default function Calendar() {
   return (
-    <section id="kalender" className="relative overflow-hidden bg-cream py-20 md:py-28">
+    <section id="kalender" className="relative overflow-hidden bg-cream py-16 md:py-28">
       <div className="relative z-10 mx-auto max-w-5xl px-6">
-        <div className="mb-12 text-center">
+        <div className="mb-10 text-center md:mb-12">
           <p className="sticker mb-6 bg-zest px-5 py-2.5 text-xs text-rind uppercase">
             Hitung sendiri
           </p>
@@ -39,7 +39,7 @@ export default function Calendar() {
         </div>
 
         {/* Kalender */}
-        <div className="rounded-[2rem] border-4 border-rind/10 bg-cream-2/40 p-6 sm:p-10">
+        <div className="rounded-[2rem] border-4 border-rind/10 bg-cream-2/40 p-5 sm:p-10">
           <ol className="grid grid-cols-6 gap-2 sm:grid-cols-10 sm:gap-3">
             {Array.from({ length: DAYS }, (_, i) => {
               const day = i + 1;
@@ -72,13 +72,13 @@ export default function Calendar() {
           </ul>
         </div>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-3">
+        <div className="mt-8 grid gap-3 sm:mt-10 sm:grid-cols-3 sm:gap-6">
           {[
             ['Hari ke-7', 'Batas buah tanpa perawatan — di sinilah penyortiran biasanya dimulai.'],
             ['Hari ke-30', 'Masa kerja penuh satu sachet, cukup untuk pelayaran 3–4 minggu.'],
             ['Hari ke-45', 'Batas pada kondisi penyimpanan ideal: suhu ruang, kelembapan normal.'],
           ].map(([t, d]) => (
-            <div key={t} className="rounded-2xl bg-cream-2/60 p-6">
+            <div key={t} className="rounded-2xl bg-cream-2/60 px-5 py-4 sm:p-6">
               <p className="text-xl font-extrabold text-grass">{t}</p>
               <p className="mt-2 text-sm leading-relaxed text-rind/80">{d}</p>
             </div>

@@ -25,7 +25,7 @@ export default function Hero() {
 
             <p className="mt-7 max-w-md text-lg leading-relaxed text-cream">
               Satu sachet kecil di dalam peti menyerap gas etilen — pemicu yang membuat buah cepat
-              matang dan lembek. Sederhana, murah, dan sudah lolos uji BPOM.
+              matang dan lembek. Gampang dipakai, dan sudah terdaftar di BPOM RI.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">

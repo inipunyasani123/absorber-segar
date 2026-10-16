@@ -2,13 +2,14 @@ import Link from 'next/link';
 import KamusBuah from '@/components/KamusBuah';
 import PosterHead from '@/components/PosterHead';
 import { SARAN } from '@/lib/buah';
+import { meta } from '@/lib/seo';
 
-export const metadata = {
+export const metadata = meta({
   title: 'Kamus Buah',
   description:
-    'Dua belas buah pasar — pisang, mangga, alpukat, pepaya, apel, melon, tomat, jeruk, semangka, anggur, salak, nanas — mana yang butuh sachet, mana yang cukup dipisah, mana yang tidak perlu.',
-  alternates: { canonical: 'https://absorber-segar.pintuweb.id/kamus-buah' },
-};
+    'Dua belas buah pasar, dari pisang sampai nanas: mana yang butuh sachet, mana yang cukup dipisah, dan mana yang aman ditaruh di mana saja.',
+  path: '/kamus-buah',
+});
 
 export default function KamusBuahPage() {
   return (

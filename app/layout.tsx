@@ -11,7 +11,7 @@ const display = Plus_Jakarta_Sans({
   display: "swap",
 })
 
-const __jsonld = {"@context":"https://schema.org","@type":"CreativeWork","name":"EthyleneAbsorber — Konsep Segar","description":"Landing page produk ethylene absorber","url":"https://absorber-segar.pintuweb.id"};
+const __jsonld = {"@context":"https://schema.org","@type":"CreativeWork","name":"EthyleneAbsorber — Konsep Segar","description":"Konsep desain situs produk ethylene absorber bergaya poster pasar, dibuat untuk kontes brief PT Dickson Synergy","url":"https://absorber-segar.pintuweb.id"};
 
 export const metadata = {
   metadataBase: new URL("https://absorber-segar.pintuweb.id"),
@@ -19,7 +19,7 @@ export const metadata = {
     default: "EthyleneAbsorber — Konsep Segar | Dickson Synergy",
     template: "%s — EthyleneAbsorber",
   },
-  description: "Landing page EthyleneAbsorber konsep \"Segar\": jaga kesegaran buah lebih lama dengan teknologi ethylene absorber berkualitas tinggi.",
+  description: "Konsep situs EthyleneAbsorber bergaya poster pasar pagi: kalender 30 hari, kamus 12 buah, dan hitungan sachet untuk lapak — terdaftar BPOM RI.",
   applicationName: "EthyleneAbsorber",
   keywords: ["ethylene absorber", "kesegaran buah", "landing page produk", "desain web", "dickson synergy"],
   authors: [{ name: "EthyleneAbsorber" }],
@@ -30,15 +30,15 @@ export const metadata = {
     type: "website",
     locale: "id_ID",
     url: "https://absorber-segar.pintuweb.id",
-    siteName: "EthyleneAbsorber",
+    siteName: "EthyleneAbsorber · Dickson Synergy",
     title: "EthyleneAbsorber — Konsep Segar | Dickson Synergy",
-    description: "Landing page EthyleneAbsorber konsep \"Segar\": jaga kesegaran buah lebih lama dengan teknologi ethylene absorber berkualitas tinggi.",
+    description: "Konsep situs EthyleneAbsorber bergaya poster pasar pagi: kalender 30 hari, kamus 12 buah, dan hitungan sachet untuk lapak — terdaftar BPOM RI.",
     images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "EthyleneAbsorber — Konsep Segar | Dickson Synergy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "EthyleneAbsorber — Konsep Segar | Dickson Synergy",
-    description: "Landing page EthyleneAbsorber konsep \"Segar\": jaga kesegaran buah lebih lama dengan teknologi ethylene absorber berkualitas tinggi.",
+    description: "Konsep situs EthyleneAbsorber bergaya poster pasar pagi: kalender 30 hari, kamus 12 buah, dan hitungan sachet untuk lapak — terdaftar BPOM RI.",
     images: ["/og.jpg"],
   },
   robots: {

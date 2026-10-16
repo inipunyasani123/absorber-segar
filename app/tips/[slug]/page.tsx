@@ -2,8 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import PosterHead from '@/components/PosterHead';
 import { TIPS, tipsBySlug, type Blok } from '@/lib/tips';
-
-const SITE = 'https://absorber-segar.pintuweb.id';
+import { meta } from '@/lib/seo';
 
 export function generateStaticParams() {
   return TIPS.map((t) => ({ slug: t.slug }));
@@ -13,12 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const t = tipsBySlug(slug);
   if (!t) return {};
-  return {
-    title: `Tips ${t.no}: ${t.judul}`,
-    description: t.ringkas,
-    alternates: { canonical: `${SITE}/tips/${t.slug}` },
-    openGraph: { type: 'article' },
-  };
+  return meta({ title: `Tips ${t.no}: ${t.judul}`, description: t.ringkas, path: `/tips/${t.slug}`, type: 'article' });
 }
 
 function Isi({ b }: { b: Blok }) {

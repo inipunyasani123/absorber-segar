@@ -46,7 +46,7 @@ export default function Footer() {
 
           <nav aria-label="Navigasi footer">
             <h2 className="cap mb-5 text-cream">Jelajahi</h2>
-            <ul className="space-y-3">
+            <ul className="grid grid-cols-2 gap-x-6 gap-y-3 sm:block sm:space-y-3">
               {nav.map((n) => (
                 <li key={n.href}>
                   <Link href={n.href} className="text-sm font-medium transition-colors hover:text-zest">
@@ -58,25 +58,16 @@ export default function Footer() {
           </nav>
 
           <div>
-            <h2 className="cap mb-5 text-cream">Hubungi</h2>
-            <ul className="space-y-4 text-sm">
-              <li>
-                <span className="cap block text-cream">Telepon</span>
-                <a href="tel:+628123456789" className="font-medium transition-colors hover:text-zest">
-                  +62 812 3456 7890
-                </a>
-              </li>
-              <li>
-                <span className="cap block text-cream">Surel</span>
-                <a href="mailto:info@ethyleneabsorber.com" className="font-medium break-all transition-colors hover:text-zest">
-                  info@ethyleneabsorber.com
-                </a>
-              </li>
-              <li>
-                <span className="cap block text-cream">Alamat</span>
-                <span className="leading-relaxed">Jl. Teknologi No. 123, Bandung 40234</span>
-              </li>
-            </ul>
+            <h2 className="cap mb-5 text-cream">Minta sample</h2>
+            <p className="max-w-xs text-sm leading-relaxed text-cream">
+              Sebutkan buahnya, ukuran tempat simpannya, dan tujuan kirimnya. Kami hitung sachetnya.
+            </p>
+            <Link
+              href="/kontak"
+              className="mt-6 inline-flex items-center justify-center rounded-full bg-zest px-6 py-3 text-sm font-extrabold text-rind transition-transform duration-200 hover:-translate-y-0.5"
+            >
+              Minta Sample Gratis
+            </Link>
           </div>
         </div>
 

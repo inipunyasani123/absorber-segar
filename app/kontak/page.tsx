@@ -3,13 +3,15 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Check, Phone, Mail, MapPin, Clock } from 'lucide-react'
+import { Check, Calculator, Package, ShieldCheck, Eye } from 'lucide-react'
 
-const saluran = [
-  { icon: Phone, label: 'Telepon', value: '+62 812 3456 7890', href: 'tel:+628123456789' },
-  { icon: Mail, label: 'Surel', value: 'info@ethyleneabsorber.com', href: 'mailto:info@ethyleneabsorber.com' },
-  { icon: MapPin, label: 'Alamat', value: 'Jl. Teknologi No. 123, Bandung 40234' },
-  { icon: Clock, label: 'Jam Kerja', value: 'Sen–Jum 08.00–17.00 · Sab 08.00–12.00' },
+/* Yang kamu dapat setelah formulir dikirim. Telepon, surel, alamat, dan jam
+   kerja yang dulu tertulis di sini karangan — kanal resmi klien belum ada. */
+const dapat = [
+  { icon: Calculator, label: 'Hitungan sachet', value: 'Pas buat tempat simpan kamu', note: '1 sachet untuk 1–2 m³ ruang tertutup.' },
+  { icon: Package, label: 'Sample gratis', value: 'Coba dulu di satu peti', note: 'Bandingkan sendiri dengan peti tanpa sachet.' },
+  { icon: ShieldCheck, label: 'Terdaftar BPOM', value: 'NA18191100273', note: 'Aman untuk pangan, nggak ubah rasa.' },
+  { icon: Eye, label: 'Cek warna', value: 'Ungu masih kerja', note: 'Cokelat artinya waktunya ganti.' },
 ]
 
 export default function KontakPage() {
@@ -51,24 +53,18 @@ export default function KontakPage() {
 
       <section className="py-14 md:py-20">
         <div className="mx-auto max-w-5xl px-6">
-          <dl className="mb-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {saluran.map((s) => (
-              <div key={s.label} className="rounded-3xl bg-cream-2/50 p-6">
+          <h2 className="cap mb-5 text-center text-rind/80">Yang kamu dapat</h2>
+          <dl className="mb-14 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
+            {dapat.map((s) => (
+              <div key={s.label} className="rounded-3xl bg-cream-2/50 p-5 sm:p-6">
                 <dt>
                   <span aria-hidden="true" className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-grass text-cream">
                     <s.icon size={19} strokeWidth={2.2} />
                   </span>
                   <span className="cap text-rind/80">{s.label}</span>
                 </dt>
-                <dd className="mt-2 text-sm font-bold text-rind">
-                  {s.href ? (
-                    <a href={s.href} className="break-all transition-colors hover:text-grass">
-                      {s.value}
-                    </a>
-                  ) : (
-                    s.value
-                  )}
-                </dd>
+                <dd className="mt-2 text-sm font-bold text-rind">{s.value}</dd>
+                <dd className="mt-1 text-[0.8125rem] leading-relaxed text-rind/80">{s.note}</dd>
               </div>
             ))}
           </dl>
